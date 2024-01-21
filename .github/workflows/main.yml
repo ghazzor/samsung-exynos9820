@@ -55,13 +55,14 @@ jobs:
         run: |
           set -e -o pipefail
           ./cruelbuild config                    \
+                       NODEFAULTS=1              \
                        model=${{ matrix.model }} \
                        name="Cruel-devel"        \
                        toolchain=$TOOLCHAIN      \
                        +io_anxiety               \
+                       +anxiety                  \
                        +nohardening              \
                        +ttl                      \
-                       +wireguard                \
                        +cifs                     \
                        +sdfat                    \
                        +ntfs                     \
