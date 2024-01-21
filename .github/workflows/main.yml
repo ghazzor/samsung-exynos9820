@@ -54,8 +54,8 @@ jobs:
       - name: Kernel Configure
         run: |
           set -e -o pipefail
+          export NODEFAULTS=1
           ./cruelbuild config                    \
-                       NODEFAULTS=1              \
                        model=${{ matrix.model }} \
                        name="Cruel-devel"        \
                        toolchain=$TOOLCHAIN      \
