@@ -60,7 +60,6 @@ jobs:
                        name="Cruel-devel"        \
                        toolchain=$TOOLCHAIN      \
                        +io_anxiety               \
-                       +anxiety                  \
                        +polly                    \
                        +nohardening              \
                        +ttl                      \
