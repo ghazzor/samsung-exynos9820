@@ -4,7 +4,7 @@ on:
  workflow_dispatch:
       
 env:
-  TOOLCHAIN: cruel
+  TOOLCHAIN: proton
   INSTALLER: yes
 
 jobs:
@@ -58,7 +58,7 @@ jobs:
                        model=${{ matrix.model }} \
                        name="Cruel-devel"        \
                        toolchain=$TOOLCHAIN      \
-                       +magisk                   \
+                       +io_anxiety               \
                        +nohardening              \
                        +ttl                      \
                        +wireguard                \
