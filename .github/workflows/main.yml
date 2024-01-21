@@ -61,6 +61,7 @@ jobs:
                        toolchain=$TOOLCHAIN      \
                        +io_anxiety               \
                        +anxiety                  \
+                       +polly                    \
                        +nohardening              \
                        +ttl                      \
                        +cifs                     \
